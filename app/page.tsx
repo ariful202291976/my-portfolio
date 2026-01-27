@@ -1,10 +1,12 @@
-import Navbar from '../src/components/Navbar'
-import Hero from '../src/components/Hero'
-import About from '../src/components/About'
-import Experience from '../src/components/Experience'
-import Projects from '../src/components/Projects'
-import Skills from '../src/components/Skills'
-import Contact from '../src/components/Contact'
+import Navbar from "../src/components/Navbar";
+import Hero from "../src/components/Hero";
+import About from "../src/components/About";
+import Experience from "../src/components/Experience";
+import Projects from "../src/components/Projects";
+import TechStack from "../src/components/TechStack";
+import Timeline from "../src/components/Timeline";
+import GitHubStats from "../src/components/GitHubStats";
+import Contact from "../src/components/Contact";
 
 export default function Home() {
   return (
@@ -13,12 +15,14 @@ export default function Home() {
       <Hero />
       <About />
       <Experience />
+      <TechStack />
       <Projects />
-      <Skills />
+      <Timeline />
+      {/* <GitHubStats /> */}
       <Contact />
       <footer className="bg-gray-900 text-white py-8 text-center">
         <p>&copy; 2026 Md Ariful Islam. All rights reserved.</p>
       </footer>
     </main>
-  )
+  );
 }

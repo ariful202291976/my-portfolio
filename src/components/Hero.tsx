@@ -46,6 +46,7 @@ export default function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-yellow-400 transition-colors duration-200"
+                aria-label="GitHub Profile"
               >
                 <Github size={28} />
               </a>
@@ -54,12 +55,16 @@ export default function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-yellow-400 transition-colors duration-200"
+                aria-label="LinkedIn Profile"
               >
                 <Linkedin size={28} />
               </a>
               <a
-                href="mailto:arifulislam747630@gmail.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=arifulislam747630@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-400 hover:text-yellow-400 transition-colors duration-200"
+                aria-label="Send Email"
               >
                 <Mail size={28} />
               </a>
