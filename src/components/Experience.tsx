@@ -1,38 +1,38 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
-import { useInView } from 'framer-motion'
-import { useRef } from 'react'
-import { Briefcase } from 'lucide-react'
+import { motion } from "framer-motion";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
+import { Briefcase } from "lucide-react";
 
 export default function Experience() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true })
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
 
   const experiences = [
     {
-      title: 'Associate Programmer (Frontend)',
-      company: 'Chuty Bangladesh Pvt. Ltd.',
-      period: 'Oct 2023 – Jul 2024',
-      location: 'Chittagong, Bangladesh',
+      title: "Associate Programmer (Frontend)",
+      company: "Chuty Bangladesh Pvt. Ltd.",
+      period: "Oct 2023 – Jul 2024",
+      location: "Chittagong, Bangladesh",
       responsibilities: [
-        'Developed responsive, high-performance user interfaces using React.js',
-        'Collaborated with cross-functional teams following agile methodologies',
-        'Improved application performance and code maintainability through best practices',
+        "Developed responsive, high-performance user interfaces using React.js",
+        "Collaborated with cross-functional teams following agile methodologies",
+        "Improved application performance and code maintainability through best practices",
       ],
     },
     {
-      title: 'Junior Web Developer',
-      company: 'Brand AtoZ',
-      period: 'Dec 2022 – Jul 2023',
-      location: 'Dhaka, Chattogram',
+      title: "Junior Web Developer",
+      company: "Brand AtoZ",
+      period: "Dec 2022 – May 2023",
+      location: "Chittagong, Bangladesh",
       responsibilities: [
-        'Built interactive web applications using React.js and modern JavaScript',
-        'Delivered responsive designs across multiple devices and browsers',
-        'Streamlined development workflows with component-based architecture',
+        "Built interactive web applications using React.js and modern JavaScript",
+        "Delivered responsive designs across multiple devices and browsers",
+        "Streamlined development workflows with component-based architecture",
       ],
     },
-  ]
+  ];
 
   return (
     <section id="experience" className="py-20 bg-black">
@@ -64,7 +64,9 @@ export default function Experience() {
                     <h3 className="text-2xl font-semibold text-white mb-1">
                       {exp.title}
                     </h3>
-                    <p className="text-lg text-yellow-400 mb-1">{exp.company}</p>
+                    <p className="text-lg text-yellow-400 mb-1">
+                      {exp.company}
+                    </p>
                     <p className="text-gray-400 mb-4">
                       {exp.period} • {exp.location}
                     </p>
@@ -84,5 +86,5 @@ export default function Experience() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
