@@ -1,66 +1,71 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
-import { useInView } from 'framer-motion'
-import { useRef } from 'react'
-import { Briefcase, GraduationCap, Award, Code } from 'lucide-react'
+import { motion } from "framer-motion";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
+import { Briefcase, GraduationCap, Award, Code } from "lucide-react";
 
 export default function Timeline() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true })
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
 
   const timelineEvents = [
     {
-      year: '2024',
-      title: 'Master of Applied Science in Software Engineering',
-      organization: 'Memorial University of Newfoundland',
-      location: 'St. John\'s, Canada',
-      type: 'education',
-      description: 'Specialized in scalable architecture and modern web technologies. Completed capstone project on e-commerce recommendation systems.',
+      year: "2024-2025",
+      title: "Master of Applied Science in Software Engineering",
+      organization: "Memorial University of Newfoundland",
+      location: "St. John's, Canada",
+      type: "education",
+      description:
+        "Specialized in scalable architecture and modern web technologies. Completed capstone project on e-commerce recommendation systems.",
       icon: <GraduationCap size={24} />,
-      color: 'yellow'
+      color: "yellow",
     },
     {
-      year: '2023 - 2024',
-      title: 'Associate Programmer (Frontend)',
-      organization: 'Chuty Bangladesh Pvt. Ltd.',
-      location: 'Chittagong, Bangladesh',
-      type: 'work',
-      description: 'Developed responsive, high-performance user interfaces using React.js. Collaborated with cross-functional teams following agile methodologies.',
+      year: "2023 - 2024",
+      title: "Associate Programmer (Frontend)",
+      organization: "Chuty Bangladesh Pvt. Ltd.",
+      location: "Chittagong, Bangladesh",
+      type: "work",
+      description:
+        "Developed responsive, high-performance user interfaces using React.js. Collaborated with cross-functional teams following agile methodologies.",
       icon: <Briefcase size={24} />,
-      color: 'yellow'
+      color: "yellow",
     },
     {
-      year: '2022 - 2023',
-      title: 'Junior Web Developer',
-      organization: 'Brand AtoZ',
-      location: 'Dhaka, Chattogram',
-      type: 'work',
-      description: 'Built interactive web applications using React.js and modern JavaScript. Delivered responsive designs across multiple devices and browsers.',
+      year: "2022 - 2023",
+      title: "Junior Web Developer",
+      organization: "Brand AtoZ",
+      location: "Dhaka, Chattogram",
+      type: "work",
+      description:
+        "Built interactive web applications using React.js and modern JavaScript. Delivered responsive designs across multiple devices and browsers.",
       icon: <Briefcase size={24} />,
-      color: 'yellow'
+      color: "yellow",
     },
     {
-      year: '2022',
-      title: 'Fullstack Web Development Certificate',
-      organization: 'Programming Hero',
-      location: 'Online',
-      type: 'certification',
-      description: 'Comprehensive training in MERN stack (MongoDB, Express.js, React, Node.js), RESTful APIs, authentication, and deployment.',
+      year: "2022",
+      title: "Fullstack Web Development Certificate",
+      organization: "Programming Hero",
+      location: "Online",
+      type: "certification",
+      description:
+        "Comprehensive training in MERN stack (MongoDB, Express.js, React, Node.js), RESTful APIs, authentication, and deployment.",
       icon: <Award size={24} />,
-      color: 'yellow'
+      color: "yellow",
     },
     {
-      year: '2015 - 2020',
-      title: 'Bachelor of Science in Computer Science and Engineering',
-      organization: 'Premier University',
-      location: 'Chittagong, Bangladesh',
-      type: 'education',
-      description: 'Foundation in computer science fundamentals, algorithms, data structures, and software engineering principles.',
+      year: "2015 - 2020",
+      title: "Bachelor of Science in Computer Science and Engineering",
+      organization: "Premier University",
+      location: "Chittagong, Bangladesh",
+      type: "education",
+      description:
+        "Foundation in computer science fundamentals, algorithms, data structures, and software engineering principles.",
       icon: <GraduationCap size={24} />,
-      color: 'yellow'
-    }
-  ]
+      color: "yellow",
+    },
+  ];
 
   return (
     <section className="py-20 bg-black">
@@ -75,7 +80,8 @@ export default function Timeline() {
             My Journey
           </h2>
           <p className="text-center text-gray-400 mb-16 max-w-2xl mx-auto">
-            A timeline of my education, professional experience, and key milestones
+            A timeline of my education, professional experience, and key
+            milestones
           </p>
 
           <div className="relative">
@@ -91,21 +97,25 @@ export default function Timeline() {
                   animate={isInView ? { opacity: 1, x: 0 } : {}}
                   transition={{ duration: 0.5, delay: index * 0.2 }}
                   className={`flex flex-col md:flex-row gap-8 items-center ${
-                    index % 2 === 0 ? 'md:flex-row-reverse' : ''
+                    index % 2 === 0 ? "md:flex-row-reverse" : ""
                   }`}
                 >
                   {/* Content */}
                   <div className="flex-1 w-full md:w-auto">
-                    <div className={`bg-neutral-950 rounded-lg p-6 border border-yellow-500/20 hover:border-yellow-500/40 transition-all duration-300 ${
-                      index % 2 === 0 ? 'md:text-right' : ''
-                    }`}>
-                      <div className={`flex items-center gap-3 mb-3 ${
-                        index % 2 === 0 ? 'md:flex-row-reverse md:justify-end' : ''
-                      }`}>
+                    <div
+                      className={`bg-neutral-950 rounded-lg p-6 border border-yellow-500/20 hover:border-yellow-500/40 transition-all duration-300 ${
+                        index % 2 === 0 ? "md:text-right" : ""
+                      }`}
+                    >
+                      <div
+                        className={`flex items-center gap-3 mb-3 ${
+                          index % 2 === 0
+                            ? "md:flex-row-reverse md:justify-end"
+                            : ""
+                        }`}
+                      >
                         <div className="bg-yellow-400/10 p-2 rounded-lg border border-yellow-400/20">
-                          <div className="text-yellow-400">
-                            {event.icon}
-                          </div>
+                          <div className="text-yellow-400">{event.icon}</div>
                         </div>
                         <span className="text-yellow-400 font-semibold text-sm">
                           {event.year}
@@ -130,9 +140,11 @@ export default function Timeline() {
                   <div className="hidden md:block relative z-10">
                     <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center border-4 border-black shadow-lg shadow-yellow-400/20">
                       <div className="text-black">
-                        {event.type === 'work' && <Briefcase size={20} />}
-                        {event.type === 'education' && <GraduationCap size={20} />}
-                        {event.type === 'certification' && <Award size={20} />}
+                        {event.type === "work" && <Briefcase size={20} />}
+                        {event.type === "education" && (
+                          <GraduationCap size={20} />
+                        )}
+                        {event.type === "certification" && <Award size={20} />}
                       </div>
                     </div>
                   </div>
@@ -171,5 +183,5 @@ export default function Timeline() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }

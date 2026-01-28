@@ -198,7 +198,7 @@ export default function Contact() {
               {/* Resume Download */}
               <div className="mt-8">
                 <a
-                  href="/ariful-resume.pdf"
+                  href="/resume/ariful-resume.pdf"
                   download
                   className="inline-flex items-center gap-2 px-6 py-3 bg-yellow-400/10 text-yellow-400 border border-yellow-400/20 rounded-lg hover:bg-yellow-400/20 transition-colors"
                 >
