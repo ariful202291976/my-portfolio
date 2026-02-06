@@ -24,7 +24,7 @@ export default function Projects() {
       tech: ['Next.js', 'React', 'TypeScript', 'MongoDB', 'Tailwind CSS', 'Stripe'],
       github: 'https://github.com/ariful202291976/shop-ease',
       live: 'https://shop-ease-online-app.vercel.app/',
-      image: '/images/shopease.png',
+      image: '/images/shopease.jpg',
     },
     {
       title: 'DocEase',
@@ -39,7 +39,7 @@ export default function Projects() {
       tech: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS', 'Stripe'],
       github: 'https://github.com/abdul-basit780/doc-ease',
       live: 'https://docease.vercel.app/',
-      image: '/images/docease.png',
+      image: '/images/docease.jpg',
     },
     {
       title: 'Campus Event Management',
@@ -54,7 +54,7 @@ export default function Projects() {
       tech: ['React', 'Next.js', 'MongoDB', 'Tailwind CSS'],
       github: 'https://github.com/ariful202291976/event_management',
       live: null,
-      image: '/images/event.png',
+      image: '/images/event.jpg',
     },
   ]
 
