@@ -36,7 +36,7 @@ export default function Projects() {
         'Synchronized calendars across multiple user roles',
         'UML-based modeling for scalability',
       ],
-      tech: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS'],
+      tech: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS', 'Stripe'],
       github: 'https://github.com/abdul-basit780/doc-ease',
       live: 'https://docease.vercel.app/',
       image: '/images/docease.png',
